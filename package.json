@@ -13,10 +13,7 @@
   "homepage": "https://github.com/neptunian/react-photo-gallery",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neptunian/react-photo-gallery.git"
-  },
-  "bugs": {
-    "url": "https://github.com/neptunian/react-photo-gallery/issues"
+    "url": "https://github.com/minndoo/react-photo-gallery"
   },
   "dependencies": {
     "prop-types": "~15.7.2",
@@ -61,8 +58,8 @@
     "webpack-dev-server": "^3.1.14"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "scripts": {
     "build": "nps build",
