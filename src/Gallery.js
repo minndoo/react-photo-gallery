@@ -5,6 +5,7 @@ import Photo, { photoPropType } from './Photo';
 import { computeColumnLayout } from './layouts/columns';
 import { computeRowLayout } from './layouts/justified';
 import { findIdealNodeSearch } from './utils/findIdealNodeSearch';
+import { useIsomorphicLayoutEffect } from './utils/isomorphic-layout';
 
 const Gallery = React.memo(function Gallery({
   photos,
@@ -19,7 +20,7 @@ const Gallery = React.memo(function Gallery({
   const [containerWidth, setContainerWidth] = useState(0);
   const galleryEl = useRef(null);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     let animationFrameID = null;
     const observer = new ResizeObserver(entries => {
       // only do something if width changes
